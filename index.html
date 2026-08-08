@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anson</title>
+    <meta
+        name="description"
+        content="Personal website of Anson"
+    >
+
+    <style>
+        :root {
+            --background: #f7f8fa;
+            --card: #ffffff;
+            --text: #202124;
+            --muted: #5f6368;
+            --accent: #2457c5;
+            --border: #e2e5e9;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--background);
+        }
+
+        nav {
+            background: var(--card);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-name {
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            margin-bottom: 60px;
+        }
+
+        .initials {
+            width: 130px;
+            height: 130px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: var(--accent);
+            color: white;
+            display: grid;
+            place-items: center;
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: 42px;
+            line-height: 1.15;
+        }
+
+        .subtitle {
+            margin: 0 0 16px;
+            color: var(--muted);
+            font-size: 19px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 9px 15px;
+            border: 1px solid var(--accent);
+            border-radius: 6px;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .button.primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        section {
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .project {
+            margin-bottom: 18px;
+            padding: 20px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            margin: 0 0 6px;
+        }
+
+        .project p {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        footer {
+            padding: 30px 24px;
+            text-align: center;
+            color: var(--muted);
+            border-top: 1px solid var(--border);
+            background: var(--card);
+        }
+
+        @media (max-width: 650px) {
+            .hero {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-content {
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .nav-links {
+                gap: 12px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content">
+            <a class="site-name" href="#">Your Name</a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header class="hero">
+            <!-- Replace YN with your initials. -->
+            <div class="initials">AS</div>
+
+            <div>
+                <h1>Your Name</h1>
+
+                <p class="subtitle">
+                    Student, researcher, designer, or professional
+                </p>
+
+                <p>
+                    Welcome to my personal website. I work on topics related
+                    to your field, research area, or professional interests.
+                </p>
+
+                <div class="buttons">
+                    <a
+                        class="button primary"
+                        href="mailto:as@edu"
+                    >
+                        Email me
+                    </a>
+
+                    <a
+                        class="button"
+                        href="https://github.com/YOUR-USERNAME"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        class="button"
+                        href="https://www.linkedin.com/in/YOUR-LINKEDIN"
+                    >
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>About me</h2>
+
+            <p>
+                Write a short introduction here. You might describe your
+                education, research interests, current position, professional
+                experience, or the kinds of problems you enjoy working on.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Selected projects</h2>
+
+            <article class="project">
+                <h3>Project One</h3>
+                <p>
+                    Briefly explain the problem, your contribution, and the
+                    result. You can also add a link to the project.
+                </p>
+            </article>
+
+            <article class="project">
+                <h3>Project Two</h3>
+                <p>
+                    Add another research project, publication, software
+                    project, presentation, or professional accomplishment.
+                </p>
+            </article>
+
+            <article class="project">
+                <h3>Project Three</h3>
+                <p>
+                    Keep each description short so visitors can quickly
+                    understand what you worked on.
+                </p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <p>
+                The best way to reach me is by email at
+                <a href="mailto:as.edu">
+                    as.edu
+                </a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Your Name. Published with GitHub Pages.
+    </footer>
+</body>
+</html>
